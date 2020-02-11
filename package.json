@@ -2,7 +2,7 @@
   "name": "tej",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tejeshwarv.tej",
+  "homepage": "https://tejeshwarv.github.io/tej",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
