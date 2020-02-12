@@ -9,13 +9,6 @@ import {
   withRouter
 } from "react-router-dom";
 
-// export function About() {
-//   return <h1>About</h1>;
-// }
-
-// export function Users() {
-//   return <h1>Users</h1>;
-// }
 class sideNav extends Component {
   state = { visible: false };
 
@@ -34,6 +27,7 @@ class sideNav extends Component {
   redirect = e => {
     e.preventDefault();
     this.props.history.push(e.target.pathname);
+    this.onClose();
   };
 
   render() {
