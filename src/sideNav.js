@@ -1,7 +1,21 @@
 import React, { Component } from "react";
 import { Drawer, Button, Icon } from "antd";
 import "antd/dist/antd.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter
+} from "react-router-dom";
 
+// export function About() {
+//   return <h1>About</h1>;
+// }
+
+// export function Users() {
+//   return <h1>Users</h1>;
+// }
 class sideNav extends Component {
   state = { visible: false };
 
@@ -17,6 +31,11 @@ class sideNav extends Component {
     });
   };
 
+  redirect = e => {
+    e.preventDefault();
+    this.props.history.push(e.target.pathname);
+  };
+
   render() {
     return (
       <div
@@ -28,7 +47,12 @@ class sideNav extends Component {
       >
         <Icon
           type="menu"
-          style={{ color: "white", fontSize: "30px" }}
+          style={{
+            color: "white",
+            fontSize: "30px",
+            position: "relative",
+            top: "5px"
+          }}
           onClick={this.showDrawer}
         />
         <Drawer
@@ -38,13 +62,31 @@ class sideNav extends Component {
           onClose={this.onClose}
           visible={this.state.visible}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <Router>
+            <div>
+              <div>
+                <Link to="/" onClick={this.redirect}>
+                  Home
+                </Link>
+              </div>
+
+              <div>
+                <Link to="/about" onClick={this.redirect}>
+                  About
+                </Link>
+              </div>
+
+              <div>
+                <Link to="/users" onClick={this.redirect}>
+                  Users
+                </Link>
+              </div>
+            </div>
+          </Router>
         </Drawer>
       </div>
     );
   }
 }
 
-export default sideNav;
+export default withRouter(sideNav);
