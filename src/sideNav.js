@@ -59,19 +59,19 @@ class sideNav extends Component {
           <Router>
             <div>
               <div>
-                <Link to="/" onClick={this.redirect}>
+                <Link to="/tej/" onClick={this.redirect}>
                   Home
                 </Link>
               </div>
 
               <div>
-                <Link to="/about" onClick={this.redirect}>
+                <Link to="/tej/about" onClick={this.redirect}>
                   About
                 </Link>
               </div>
 
               <div>
-                <Link to="/users" onClick={this.redirect}>
+                <Link to="/tej/users" onClick={this.redirect}>
                   Users
                 </Link>
               </div>

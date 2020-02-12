@@ -13,7 +13,7 @@ export function About() {
 export function Users() {
   return (
     <h1>
-      Users<Link to={"/about"}>home</Link>
+      Users<Link to={"/tej/about"}>home</Link>
     </h1>
   );
 }
@@ -40,8 +40,8 @@ class App extends React.Component {
           </Navbar>
 
           <Switch>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/users" component={Users} />
+            <Route exact path="/tej/about" component={About} />
+            <Route exact path="/tej/users" component={Users} />
           </Switch>
         </Router>
       </div>
