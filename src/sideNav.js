@@ -56,7 +56,7 @@ class sideNav extends Component {
           onClose={this.onClose}
           visible={this.state.visible}
         >
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <div>
               <div>
                 <Link to="/" onClick={this.redirect}>
