@@ -2,7 +2,7 @@
   "name": "tej",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tejeshwarv.github.io/teju",
+  "homepage": "https://tejeshwarv.github.io/tej",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -28,7 +28,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
