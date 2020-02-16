@@ -19,6 +19,8 @@ export function Users() {
 }
 class App extends React.Component {
   render() {
+    console.log("This is the process.env", process.env.PUBLIC_URL);
+
     return (
       <div className="App">
         <Router basename={process.env.PUBLIC_URL}>
