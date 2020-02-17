@@ -65,13 +65,13 @@ class sideNav extends Component {
               </div>
 
               <div>
-                <Link to="/about" onClick={this.redirect}>
+                <Link to="/tej/about" onClick={this.redirect}>
                   About
                 </Link>
               </div>
 
               <div>
-                <Link to="/users" onClick={this.redirect}>
+                <Link to="/tej/users" onClick={this.redirect}>
                   Users
                 </Link>
               </div>
